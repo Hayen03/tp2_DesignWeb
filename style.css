@@ -1,0 +1,62 @@
+body {
+    background-color: #EEE;
+}
+
+h1 {
+    
+}
+
+.logo {
+    display: inline-block;
+	margin: 0;
+	width: 25%;
+	height: 100%;
+}
+.logo object {
+	height: 100%;
+}
+
+#index {
+    display: inline-block;
+    width: 70%;
+	height: 100%;
+    
+}
+
+header {
+    background-color: gray;
+    width: 700px;
+	height: 150px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+header ul {
+    display: block;
+    list-style-type: none;
+	margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+	width: 90%;
+}
+header ul li {
+    display: inline-block;
+	margin-left: 10px;
+	width: 30%;
+}
+header a {
+    text-align: center;
+    text-decoration: none;
+}
+header ul li a {
+    display: block;
+    color: red;
+    padding: 20px;
+    background-color:orange;
+}
+header ul li a:hover {
+	background-color: #F90;
+}
+header ul li a.selected {
+	border-top: solid red 5px;
+}
