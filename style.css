@@ -1,62 +1,127 @@
-body {
-    background-color: #EEE;
-}
-
-h1 {
-    
-}
-
-.logo {
-    display: inline-block;
+body{
+	background-color: #EEE;
 	margin: 0;
+}
+
+h1{
+	
+}
+
+header{
+	background-color: #CCAD55;
+	width: 700px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a.logo {
+  position: relative;
+  display: inline-block;
+  display: inline-block;
+	margin: auto;
 	width: 25%;
 	height: 100%;
 }
-.logo object {
+a.logo:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
+.logo object{
 	height: 100%;
 }
-
-#index {
-    display: inline-block;
-    width: 70%;
+#index{
+	display: inline-block;
+	width: 70%;
 	height: 100%;
-    
+	vertical-align: top;
 }
-
-header {
-    background-color: gray;
-    width: 700px;
-	height: 150px;
-    margin-left: auto;
-    margin-right:auto;
+#index h1 {
+	height: 40px;
+	margin: 20px auto 0 auto;
 }
-
-header ul {
-    display: block;
-    list-style-type: none;
-	margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
+#index nav {
+	display: block;
+	margin: 40px auto 0 auto;
 	width: 90%;
 }
-header ul li {
-    display: inline-block;
+#index ul{
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	margin: 0;
+}
+#index ul li{
+	display: inline-block;
 	margin-left: 10px;
+	margin-bottom: 0;
 	width: 30%;
 }
-header a {
-    text-align: center;
-    text-decoration: none;
+#index a{
+	text-align: center;
+	text-decoration: none;
 }
-header ul li a {
-    display: block;
-    color: red;
-    padding: 20px;
-    background-color:orange;
+#index ul li a{
+	display: block;
+	color: red;
+	padding: 20px 0 12px 0;
+	background-color: orange;
+	margin-bottom: 0;
 }
-header ul li a:hover {
+#index ul li a:hover{
 	background-color: #F90;
 }
-header ul li a.selected {
+#index ul li a.selected{
 	border-top: solid red 5px;
+	padding-top: 15px;
+}
+
+main {
+	background-color: #CCC;
+	width: 70%;
+	margin: 0 auto;
+	min-width: 700px;
+}
+
+footer {
+	background-color:#262626;
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	color: #555;
+	min-width: 700px;
+}
+footer a {
+	text-decoration: none;
+	color: inherit;
+}
+footer div {
+	display: inline-block;
+}
+footer nav {
+	float: left;
+	display: inline-block;
+	width: 200px;
+	margin-left:10px;
+	height: 80px;
+}
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+footer #info {
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+}
+footer #social {
+	float: right;
+	width: 200px;
+	margin-right: 10px;
+	height: 80px;
 }
