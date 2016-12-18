@@ -1,16 +1,27 @@
 body{
 	background-color: #EEE;
 	margin: 0;
+	color: #730000;
+	font-family: "Apple Chancery";
+	font-size: 20px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: SignPainter;
+	text-transform: uppercase;
+}
 h1{
-	
+	font-size: 65px;
+}
+h2 {
+	font-size: 34px;
 }
 
 header{
 	background-color: #CCAD55;
 	width: 700px;
 	height: 150px;
+	min-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -63,11 +74,12 @@ a.logo:after {
 #index a{
 	text-align: center;
 	text-decoration: none;
+	height: 18px;
 }
 #index ul li a{
 	display: block;
-	color: red;
-	padding: 20px 0 12px 0;
+	color: inherit;
+	padding: 16px 0 16px 0;
 	background-color: orange;
 	margin-bottom: 0;
 }
@@ -76,7 +88,7 @@ a.logo:after {
 }
 #index ul li a.selected{
 	border-top: solid red 5px;
-	padding-top: 15px;
+	padding-top: 11px;
 }
 
 main {
@@ -84,6 +96,49 @@ main {
 	width: 70%;
 	margin: 0 auto;
 	min-width: 700px;
+	padding: 10px;
+}
+
+table {
+	margin: 0 auto;
+	border-spacing: 6px;
+	width: 95%;
+	max-width: 95%;
+	/*border: solid thin #730000;*/
+}
+th {
+	background-color: #FFBD20;
+	height: 40px;
+}
+th>h2 {
+	margin: 5px;
+}
+table#promo td {
+	width: 30%;
+}
+table#promo td>img {
+	width: 95%;
+	margin: auto auto;
+}
+
+.article {
+	margin: 5px auto;
+	width: 95%;
+	padding: 5px;
+	border-top-style: solid;
+	border-top-width: thin;
+	border-right-style: solid;
+	border-right-width: medium;
+	border-color: #730000;
+}
+p {
+	text-indent: 50px;
+}
+.article p {
+	margin: 0 0 0 65px;
+}
+.article h2 {
+	margin-bottom: 10px;
 }
 
 footer {
@@ -93,6 +148,8 @@ footer {
 	height: 100px;
 	color: #555;
 	min-width: 700px;
+	font-family: "Times New Roman";
+	font-size: 18px;
 }
 footer a {
 	text-decoration: none;
