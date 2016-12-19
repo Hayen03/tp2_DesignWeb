@@ -28,9 +28,9 @@ header{
 
 }
 a.logo {
-  position: relative;
-  display: inline-block;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
+	display: inline-block;
 	margin: auto;
 	width: 25%;
 	height: 100%;
@@ -78,18 +78,16 @@ a.logo:after {
 	text-align: center;
 	text-decoration: none;
 	height: 22px;
-}
-#index ul li a{
 	display: block;
 	color: inherit;
 	padding: 16px 0 12px 0;
 	background-color: orange;
 	margin-bottom: 0;
 }
-#index ul li a:hover{
+#index a:hover{
 	background-color: #F90;
 }
-#index ul li a.selected{
+#index a.selected{
 	border-top: solid red 5px;
 	padding-top: 11px;
 }
@@ -107,7 +105,6 @@ table {
 	margin: 0 auto;
 	border-spacing: 6px;
 	width: 95%;
-	max-width: 95%;
 	/*border: solid thin #730000;*/
 }
 th {
@@ -281,10 +278,10 @@ footer #social img{
     background-color:white;
 }
 
-#menutitle{
-    font-size:2em;
-    font-family:SignPainter;
+.menu_nav h2{
     font-weight:bold;
+    margin: 0;
+    padding-left: 5px;
 }
 
 /*Style Localiser*/
@@ -312,4 +309,71 @@ ul.horizontal {
 }
 ul.horizontal li {
 	display: inline-block;
+}
+
+@media (max-width: 1024px) {
+	body {
+		font-size: 18px;
+		min-width: 530px;
+	}
+	header {
+		width: 100%;
+		height: 80px;
+	}
+	h1{
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	
+	a.logo {
+		width: 100px;
+		padding-left: 5%;
+		margin-right: 5%;
+	}
+	#index object {
+		height: 52px;
+		margin-left: 0;
+	}
+	#index nav {
+		height: 28px;
+	}
+	#index a {
+		height: 28px;
+		padding: 0;
+	}
+	#index a.selected {
+		padding: 0;
+		border-style: none;
+		background-color: #F90;
+	}
+	#index ul li {
+		margin-left: 0;
+	}
+	
+	main {
+		width: 98%;
+		min-width: inherit;
+		padding: 1%;
+	}
+	table {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		height: auto;
+	}
+	
+	#map, form {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.menu_nav {
+		font-size: inherit;
+	}
+	#menu {
+		margin-left: 20%;
+	}
 }
