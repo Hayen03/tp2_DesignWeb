@@ -1,5 +1,5 @@
 body{
-	background-color: #EEE;
+	background-color: #CCC;
 	margin: 0;
 	color: #730000;
 	font-family: "Apple Chancery";
@@ -22,8 +22,10 @@ header{
 	width: 700px;
 	height: 150px;
 	min-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
+    left:0;
+    right:0;
+    margin:0 auto;
+
 }
 a.logo {
   position: relative;
@@ -50,23 +52,24 @@ a.logo:after {
 	height: 100%;
 	vertical-align: top;
 }
-#index h1 {
-	height: 40px;
-	margin: 20px auto 0 auto;
+#index object {
+	display: block;
+	height: 100px;
+	width: 100%;
+	margin: 0;
 }
 #index nav {
 	display: block;
-	margin: 40px auto 0 auto;
+	margin: 0 auto;
+	padding: 0;
 	width: 90%;
+	height: 50px;
 }
 #index ul{
-	list-style-type: none;
 	padding: 0;
-	overflow: hidden;
 	margin: 0;
 }
 #index ul li{
-	display: inline-block;
 	margin-left: 10px;
 	margin-bottom: 0;
 	width: 30%;
@@ -74,12 +77,12 @@ a.logo:after {
 #index a{
 	text-align: center;
 	text-decoration: none;
-	height: 18px;
+	height: 22px;
 }
 #index ul li a{
 	display: block;
 	color: inherit;
-	padding: 16px 0 16px 0;
+	padding: 16px 0 12px 0;
 	background-color: orange;
 	margin-bottom: 0;
 }
@@ -92,12 +95,13 @@ a.logo:after {
 }
 
 main {
-	background-color: #CCC;
 	width: 70%;
 	margin: 0 auto;
 	min-width: 700px;
 	padding: 10px;
 }
+
+
 
 table {
 	margin: 0 auto;
@@ -122,7 +126,8 @@ table#promo td>img {
 }
 
 .article {
-	margin: 5px auto;
+	background-color: #EEE;
+	margin: 5px auto 20px auto;
 	width: 95%;
 	padding: 5px;
 	border-top-style: solid;
@@ -131,15 +136,66 @@ table#promo td>img {
 	border-right-width: medium;
 	border-color: #730000;
 }
-p {
-	text-indent: 50px;
-}
-.article p {
+.article > p {
+    text-indent: 50px;
 	margin: 0 0 0 65px;
 }
 .article h2 {
 	margin-bottom: 10px;
 }
+.article ul {
+	list-style-type: none;
+	list-style-position: inside;
+}
+.article object {
+	border: solid #730000 thin;
+	width: 90%;
+	padding: 10px;
+	margin: 5px 20px;
+}
+ul.neg, ul.pos {
+	list-style-position: outside;
+}
+ul.neg li:before {
+	content: "-	";
+}
+ul.pos li:before {
+	content: "+	";
+}
+
+
+.courriel{
+    padding-top:25px;
+}
+#infolettre {
+        font-size:0.85em;
+        line-height:125%;
+        font-family:SignPainter
+}
+
+form input {
+    margin-top:5px;
+}
+
+
+
+.mail {
+    width:60px;
+    margin-top:20px;
+    padding-left:85px;
+    padding-right:10px;
+    padding-bottom:10px;
+    float:left;
+}
+
+.numtel {
+    font-family:SignPainter;
+    float: right;
+    color:white;
+}
+
+
+/*Style Footer*/
 
 footer {
 	background-color:#262626;
@@ -150,6 +206,7 @@ footer {
 	min-width: 700px;
 	font-family: "Times New Roman";
 	font-size: 18px;
+	padding-bottom: 10px;
 }
 footer a {
 	text-decoration: none;
@@ -181,4 +238,78 @@ footer #social {
 	width: 200px;
 	margin-right: 10px;
 	height: 80px;
+}
+
+footer #social img{ 
+    padding:5px;
+    width: 35px;
+    float:right;
+}
+
+
+
+
+/*Style Menu*/
+
+
+.menu_nav {
+    font-size:1.5em;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:15%;
+    position:fixed;
+    height:100%;
+}
+
+.menu_nav > li a {
+    display:block;
+    padding:1.5px;
+}
+
+#menu {
+    margin-left:25%;
+}
+
+.menu_nav > li a:link {color:black; background-color:#CCC; text-decoration:none;}
+.menu_nav > li a:visited{color:black; background-color:#CCC; text-decoration:none;}
+.menu_nav > li a:hover{color:black; background-color:orange; text-decoration:none;}
+.menu_nav > li a:active{color:black; background-color:orange; text-decoration:none;}
+
+.img_menu {
+    width:250px;
+    background-color:white;
+}
+
+#menutitle{
+    font-size:2em;
+    font-family:SignPainter;
+    font-weight:bold;
+}
+
+/*Style Localiser*/
+
+
+#grossesroches {
+        font-family:SignPainter;
+}
+
+#map {
+    height:325px
+}
+
+svg.couleur {
+	width: 60px;
+	height: 60px;
+}
+svg.couleur rect {
+	stroke: black;
+	stroke-width: 3px;
+}
+ul.horizontal {
+	list-style-type: none;
+	overflow: hidden;
+}
+ul.horizontal li {
+	display: inline-block;
 }
